@@ -1,38 +1,38 @@
 var particles = Particles.init({
     selector: '.background',
     color: '#88C8FF',
-    maxParticles: 700,
+    maxParticles: 680,
     connectParticles: true,
 
     responsive: [
         {
             breakpoint: 2200,
             options: {
-                maxParticles: 500
+                maxParticles: 480
             }
         },
         {
             breakpoint: 1850,
             options: {
-                maxParticles: 400
+                maxParticles: 380
             }
         },
         {
             breakpoint: 1600,
             options: {
-                maxParticles: 300
+                maxParticles: 280
             }
         },
         {
             breakpoint: 1300,
             options: {
-                maxParticles: 200
+                maxParticles: 190
             }
         },
         {
             breakpoint: 1100,
             options: {
-                maxParticles: 150
+                maxParticles: 140
             }
         },
         {

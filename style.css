@@ -4,6 +4,22 @@ html, body {
     background-color: rgb(21, 16, 25);
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav .nav_logo img {
+    height: 40px;
+}
+nav .nav_logo a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
 .background {
     position: absolute;
     display: block;
