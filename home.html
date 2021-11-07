@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home - Swifty, a simple and open source personal assistant</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <canvas class="background"></canvas>
 
-        <nav>
-            <div class="nav_logo">
-                <img src="swifty.png" alt="Swifty Assistant logo">
-                <a href="#">Swifty Assistant</h1>
-            </div>
-            <div class="onglets">
-                <div class="item">
-                    <img src="github-brands.svg" alt="GitHub repository">
-                    <a  href="dfgdf">GitHub</a>
-                </div>
-                <div class="item">
-                    <img src="paper-plane-solid.svg" alt="Send mail">
-                    <a href="gfd">Contact</a>
-                </div>
-            </div>
-            <div class="match_parent"></div>
-        </nav>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home - Swifty, a simple and open source personal assistant</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-        <script src="app.js"></script>
-    </body>
+<body>
+    <canvas class="background"></canvas>
+
+    <nav>
+        <a href="#" title="Home">Swifty</a>
+
+        <div class="onglets">
+            <button id="btn_github">GitHub</button>
+            <button id="btn_contact">Contact</button>
+        </div>
+    </nav>
+
+    <div class="content_page">
+        <img class="icon_swifty" src="swifty.png">
+        <h1>Swifty Assistant</h1>
+        <h2>Swifty Assistant is a simple, user-friendly, personal assistant based on an extension system</h2>
+        <h2>Swifty is a personal assistant created to be useful to both beginners and computer experts! It works offline and does not collect any personal data! If you like Swifty Assistant and you find it useful, please feel free to contribute to the project, thank you.</h2>
+        
+        <div>
+            <button class="btn_download">Download v1.0.0-alpha3</button>
+            <button class="btn_github_project"><img src="github-brands.svg"></button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
 </html>

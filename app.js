@@ -43,3 +43,14 @@ var particles = Particles.init({
         },
     ]
 });
+
+const btn_github = window.document.getElementById("btn_github");
+const btn_contact = window.document.getElementById("btn_contact");
+
+btn_github.onclick = function(){
+    window.open('https://github.com/Swiftapp-hub');
+}
+
+btn_contact.onclick = function(){
+    window.location.href = "mailto:swiftyassistant.io@gmail.com";
+}

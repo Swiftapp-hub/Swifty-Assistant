@@ -4,20 +4,177 @@ html, body {
     background-color: rgb(21, 16, 25);
 }
 
+
 nav {
+    background: rgba(10, 10, 10, 0.767);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 12px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
-nav .nav_logo img {
-    height: 40px;
-}
-nav .nav_logo a {
+nav a {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: white;
-    margin-left: 15px;
+    font-size: 1.8em;
+    margin-left: 20px;
+    height: 100%;
+}
+
+nav .onglets button {
+    align-items: center;
+    border: 4;
+    border-radius: 30px;
+    border-color: #49aaff;
+    border-style: solid;
+    background: transparent;
+    color: white;
+    position: relative;
+    padding: 4px 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.0em;
+    transition: all .4s;
+}
+
+nav .onglets button:hover {
+    background: #49aaff;
+}
+
+nav .onglets button:active {
+    background: #49aaff7e;
+    border-color: #49aaff7e;
+    transition: all .15s;
+}
+
+.content_page {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    bottom: 15%;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 35px 18px rgba(7, 7, 7, 0.596);
+    background: rgba(7, 7, 7, 0.747);
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.content_page .icon_swifty {
+    height: 100px;
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.473);
+}
+
+.content_page h1 {
+    color: rgb(240, 240, 240);
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+}
+
+.content_page h2 {
+    color: rgb(240, 240, 240);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.content_page div {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content_page .btn_download {
+    background: transparent;
+    border: 0px;
+    color: black;
+    padding: 15px 50px;
+    font-size: 30px;
+    font-family: 'Baloo 2', cursive;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    border-radius: 60px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+}
+
+.content_page .btn_download::after {
+    content: "";
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: -70px;
+    left: -90px;
+    background-image: linear-gradient(225deg, #0deca9 0%, #40879b 50%, #e43e14 100%);
+    z-index: -1;
+    transition: all .5s;
+}
+
+.content_page .btn_download:hover::after {
+    transform: rotate(150deg);
+}
+
+.content_page .btn_download:hover {
+    transform: translate(0, -4px);
+    box-shadow: 10px -10px 25px 0px rgba(235, 63, 11, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
+
+.content_page .btn_download:active {
+    transform: translate(0px, 1px);
+    box-shadow: 5px -5px 20px 0px rgba(235, 63, 11, 0.25), -5px 5px 20px 0px rgba(39, 200, 255, .25);
+    transition: all .1s;
+}
+
+.content_page .btn_github_project {
+    background: transparent;
+    border: 0px;
+    padding: 15px 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    border-radius: 60px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+}
+
+.content_page .btn_github_project img {
+    height: 44px;
+}
+
+.content_page .btn_github_project::after {
+    content: "";
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    background-image: linear-gradient(225deg, #0deca9 0%, #40879b 50%, #e43e14 100%);
+    z-index: -1;
+    transition: all .5s;
+}
+
+.content_page .btn_github_project:hover::after {
+    transform: rotate(150deg);
+}
+
+.content_page .btn_github_project:hover {
+    transform: translate(0, -4px);
+    box-shadow: 10px -10px 25px 0px rgba(235, 63, 11, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
+
+.content_page .btn_github_project:active {
+    transform: translate(0px, 1px);
+    box-shadow: 5px -5px 20px 0px rgba(235, 63, 11, 0.25), -5px 5px 20px 0px rgba(39, 200, 255, .25);
+    transition: all .1s;
 }
 
 .background {
