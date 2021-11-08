@@ -17,7 +17,7 @@
     <canvas class="background"></canvas>
 
     <nav>
-        <a href="#" title="Home">Swifty</a>
+        <a id="logo" href="#" title="Home">Swifty</a>
 
         <div class="onglets">
             <button id="btn_github">GitHub</button>
@@ -26,18 +26,27 @@
     </nav>
 
     <div class="content_page">
-        <img class="icon_swifty" src="swifty.png">
-        <h1>Swifty Assistant</h1>
-        <h2>Swifty Assistant is a simple, user-friendly, personal assistant based on an extension system</h2>
-        <h2>Swifty is a personal assistant created to be useful to both beginners and computer experts! It works offline and does not collect any personal data! If you like Swifty Assistant and you find it useful, please feel free to contribute to the project, thank you.</h2>
-        
         <div>
-            <button class="btn_download">Download v1.0.0-alpha3</button>
-            <button class="btn_github_project"><img src="github-brands.svg"></button>
+            <img class="icon_swifty" src="swifty.png">
+            <h1>Swifty Assistant</h1>
+            <h2 id="h2">A simple, user-friendly, personal assistant based on an extension system</h2>
+            <h2 id="h3">Swifty is created to be useful to both beginners and computer experts! It works offline and does not
+                collect any personal data! If you like Swifty Assistant and you find it useful, please feel free to
+                contribute to the project, thank you.</h2>
+        </div>
+
+        <div class="match_parent"></div>
+
+        <div>
+            <button id="btn_download" class="btn_download">Download v1.0.0-alpha3</button>
+            <button id="btn_github_project" class="btn_github_project">
+                <img src="github-brands.svg">
+            </button>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="app.js"></script>
 </body>
 

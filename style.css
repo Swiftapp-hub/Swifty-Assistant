@@ -4,7 +4,6 @@ html, body {
     background-color: rgb(21, 16, 25);
 }
 
-
 nav {
     background: rgba(10, 10, 10, 0.767);
     display: flex;
@@ -40,6 +39,7 @@ nav .onglets button {
     font-family: 'Baloo 2', cursive;
     font-size: 1.0em;
     transition: all .4s;
+    transition-property: background;
 }
 
 nav .onglets button:hover {
@@ -54,6 +54,9 @@ nav .onglets button:active {
 
 .content_page {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     top: 15%;
     left: 15%;
     right: 15%;
@@ -65,6 +68,7 @@ nav .onglets button:active {
     text-align: center;
     align-items: center;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .content_page .icon_swifty {
@@ -89,7 +93,7 @@ nav .onglets button:active {
     align-content: center;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .content_page .btn_download {
@@ -97,11 +101,14 @@ nav .onglets button:active {
     border: 0px;
     color: black;
     padding: 15px 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     font-size: 30px;
     font-family: 'Baloo 2', cursive;
     cursor: pointer;
     position: relative;
     transition: all .2s;
+    transition-property: box-shadow;
     overflow: hidden;
     border-radius: 60px;
     box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
@@ -124,12 +131,10 @@ nav .onglets button:active {
 }
 
 .content_page .btn_download:hover {
-    transform: translate(0, -4px);
     box-shadow: 10px -10px 25px 0px rgba(235, 63, 11, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
 }
 
 .content_page .btn_download:active {
-    transform: translate(0px, 1px);
     box-shadow: 5px -5px 20px 0px rgba(235, 63, 11, 0.25), -5px 5px 20px 0px rgba(39, 200, 255, .25);
     transition: all .1s;
 }
@@ -141,6 +146,7 @@ nav .onglets button:active {
     cursor: pointer;
     position: relative;
     transition: all .2s;
+    transition-property: box-shadow;
     overflow: hidden;
     border-radius: 60px;
     box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
@@ -167,12 +173,10 @@ nav .onglets button:active {
 }
 
 .content_page .btn_github_project:hover {
-    transform: translate(0, -4px);
     box-shadow: 10px -10px 25px 0px rgba(235, 63, 11, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
 }
 
 .content_page .btn_github_project:active {
-    transform: translate(0px, 1px);
     box-shadow: 5px -5px 20px 0px rgba(235, 63, 11, 0.25), -5px 5px 20px 0px rgba(39, 200, 255, .25);
     transition: all .1s;
 }
