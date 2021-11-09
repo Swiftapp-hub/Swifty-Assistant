@@ -56,6 +56,7 @@ const h2 = document.getElementById("h2");
 const h3 = document.getElementById("h3");
 
 const loader = document.querySelector('.bg_loader');
+const body = document.body;
 
 btn_github.onclick = function () {
     open('https://github.com/Swiftapp-hub');
@@ -75,6 +76,7 @@ btn_download.onclick = function () {
 
 window.onload = function(){
     loader.classList.add('fondu-out');
+    body.removeChild(loader);
 
     const anim = gsap.timeline({paused: true});
 

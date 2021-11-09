@@ -148,11 +148,11 @@ nav .onglets button:active {
 
 .content_page .btn_download::after {
     content: "";
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     position: absolute;
-    top: -70px;
-    left: -90px;
+    top: -90px;
+    left: -100px;
     background-image: linear-gradient(225deg, #0deca9 0%, #40879b 50%, #e43e14 100%);
     z-index: -1;
     transition: all .5s;
