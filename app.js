@@ -1,49 +1,3 @@
-var particles = Particles.init({
-    selector: '.background',
-    color: '#88C8FF',
-    maxParticles: 680,
-    connectParticles: true,
-
-    responsive: [
-        {
-            breakpoint: 2200,
-            options: {
-                maxParticles: 480
-            }
-        },
-        {
-            breakpoint: 1850,
-            options: {
-                maxParticles: 380
-            }
-        },
-        {
-            breakpoint: 1600,
-            options: {
-                maxParticles: 280
-            }
-        },
-        {
-            breakpoint: 1300,
-            options: {
-                maxParticles: 190
-            }
-        },
-        {
-            breakpoint: 1100,
-            options: {
-                maxParticles: 140
-            }
-        },
-        {
-            breakpoint: 900,
-            options: {
-                maxParticles: 100
-            }
-        },
-    ]
-});
-
 const btn_github = document.getElementById("btn_github");
 const btn_contact = document.getElementById("btn_contact");
 const btn_github_project = document.getElementById("btn_github_project");
@@ -81,12 +35,12 @@ window.onload = function(){
     const anim = gsap.timeline({paused: true});
 
     anim
-    .from(logo, {duration: 2, x: -150, opacity: 0, ease: "power2.out"})
+    .from(logo, {duration: 2, x: -150, opacity: 0, ease: "power2.out"}, 0.1)
     .from(img_logo, {duration: 1, y: -20, opacity: 0, ease: "power2.out"}, 0.4)
     .from(h1, {duration: 1, y: -20, opacity: 0, ease: "power2.out"}, 0.8)
     .from(h2, {duration: 1, y: -20, opacity: 0, ease: "power2.out"}, 1.2)
     .from(h3, {duration: 1, y: -20, opacity: 0, ease: "power2.out"}, 1.6)
-    .from(btn_github, {duration: 1.5, y: -200, opacity: 0, ease: "power2.out"}, 0)
+    .from(btn_github, {duration: 1.5, y: -200, opacity: 0, ease: "power2.out"}, 0.1)
     .from(btn_contact, {duration: 1.5, y: -200, opacity: 0, ease: "power2.out"}, 0.5)
     .from(btn_download, {duration: 2, x: -300, opacity: 0, ease: "power2.out"}, 0.6)
     .from(btn_github_project, {duration: 2, x: 300, opacity: 0, ease: "power2.out"}, 1);

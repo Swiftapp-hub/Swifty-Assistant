@@ -19,7 +19,7 @@ html, body {
     bottom: 0%;
     padding: 50px;
     box-shadow: 0px 0px 35px 18px rgba(7, 7, 7, 0.596);
-    background: rgb(7, 7, 7);
+    background: rgb(15, 15, 15);
     align-items: center;
 }
 
@@ -34,16 +34,19 @@ html, body {
     transition: opacity 0.4s ease-out;
 }
 
+
 /* content of page */
 
 nav {
     background: rgba(10, 10, 10, 0.767);
     display: flex;
     flex-wrap: wrap;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     padding: 12px;
     align-items: center;
-    position: relative;
+    position: fixed;
     z-index: 1;
 }
 
@@ -60,7 +63,7 @@ nav .onglets button {
     align-items: center;
     border: 4;
     border-radius: 30px;
-    border-color: #49aaff;
+    border-color: #BF99A5;
     border-style: solid;
     background: transparent;
     color: white;
@@ -75,28 +78,28 @@ nav .onglets button {
 }
 
 nav .onglets button:hover {
-    background: #49aaff;
+    background: #BF99A5;
 }
 
 nav .onglets button:active {
-    background: #49aaff7e;
-    border-color: #49aaff7e;
+    background: #997983;
+    border-color: #997983;
     transition: all .15s;
 }
 
 .content_page {
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     top: 15%;
-    left: 15%;
-    right: 15%;
-    bottom: 15%;
-    padding: 50px;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    padding: 2%;
     border-radius: 40px;
-    box-shadow: 0px 0px 35px 18px rgba(7, 7, 7, 0.596);
-    background: rgba(7, 7, 7, 0.747);
+    box-shadow: 0px 0px 35px 18px rgba(7, 7, 7, 0.534);
+    background: rgba(7, 7, 7, 0.664);
     text-align: center;
     align-items: center;
     backdrop-filter: blur(6px);
@@ -105,7 +108,6 @@ nav .onglets button:active {
 
 .content_page .icon_swifty {
     height: 100px;
-    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.473);
 }
 
 .content_page h1 {
@@ -120,20 +122,24 @@ nav .onglets button:active {
     font-size: 20px;
 }
 
-.content_page div {
+.content_page .content {
     align-items: center;
     align-content: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    width: 47%;
+}
+
+.content_page .max_parent {
+    width: 4%;
 }
 
 .content_page .btn_download {
     background: transparent;
     border: 0px;
     color: black;
-    padding: 15px 50px;
-    margin-top: 60px;
+    padding: 20px 50px;
     margin-bottom: 40px;
     font-size: 30px;
     font-family: 'Baloo 2', cursive;
@@ -174,7 +180,7 @@ nav .onglets button:active {
 .content_page .btn_github_project {
     background: transparent;
     border: 0px;
-    padding: 15px 50px;
+    padding: 20px 60px;
     cursor: pointer;
     position: relative;
     transition: all .2s;
@@ -213,10 +219,128 @@ nav .onglets button:active {
     transition: all .1s;
 }
 
-.background {
-    position: absolute;
-    display: block;
+.svg-container {
+    position: fixed;
+    display: inline-block;
     top: 0;
+    bottom: 0;
+    right: 0;
     left: 0;
     z-index: 0;
+    vertical-align: middle; 
+    overflow: hidden;
+}
+
+.background {
+    display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media all and (orientation: portrait) {
+    .content_page {
+        flex-direction: column;
+        left: 8%;
+        right: 8%;
+        padding: 3%;
+        box-shadow: 0px 0px 25px 10px rgba(7, 7, 7, 0.534);
+    }
+
+    .content_page .content {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .content_page .btn_download {
+        margin-top: 30px;
+    }
+
+    .background {
+        width: 200%;
+    }
+}
+
+@media all and (max-width: 851px) {
+    nav .onglets button {
+        border: 3;
+        border-radius: 25px;
+        padding: 3px 18px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: 'Baloo 2', cursive;
+        font-size: 0.9em;
+        transition: all .4s;
+        transition-property: background;
+    }
+
+    .content_page h1 {
+        font-size: 42px;
+    }
+
+    .content_page h2 {
+        font-size: 17px;
+    }
+
+    .content_page .btn_download {
+        margin-bottom: 28px;
+        font-size: 23px;
+        font-family: 'Baloo 2', cursive;
+        border-radius: 30px;
+        padding: 6px 12px;
+    }
+
+    .content_page .btn_download:hover {
+        box-shadow: 5px -5px 15px 0px rgba(235, 63, 11, 0.25), -5px 5px 15px 0px rgba(39, 200, 255, .25);
+    }
+
+    .content_page .btn_github_project {
+        padding: 6px 25px;
+        border-radius: 30px;
+    }
+
+    .content_page .btn_github_project:hover {
+        box-shadow: 5px -5px 15px 0px rgba(235, 63, 11, 0.25), -5px 5px 15px 0px rgba(39, 200, 255, .25);
+    }
+
+    .content_page .btn_github_project img {
+        height: 32px;
+    }
+}
+
+@media all and (max-height: 1100px) and (orientation: portrait) {
+    .content_page {
+        position: unset;
+        bottom: unset;
+        justify-content: center;
+    }
+
+    .containeur {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 15%;
+        left: 8%;
+        right: 8%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .containeur .margin {
+        height: 30px;
+    }
+
+    .content_page .btn_github_project {
+        margin-bottom: 10px;
+    }
+
+    .content_page .icon_swifty {
+        height: 80px;
+        margin-top: 10px;
+    }
 }
