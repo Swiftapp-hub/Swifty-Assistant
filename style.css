@@ -38,7 +38,7 @@ html, body {
 /* content of page */
 
 nav {
-    background: rgba(10, 10, 10, 0.767);
+    background: rgba(10, 10, 10, 0.700);
     display: flex;
     flex-wrap: wrap;
     left: 0;
@@ -46,6 +46,7 @@ nav {
     justify-content: space-between;
     padding: 12px;
     align-items: center;
+    transition: all .25s;
     position: fixed;
     z-index: 1;
 }
@@ -277,6 +278,10 @@ nav .onglets button:active {
         transition: all .4s;
         transition-property: background;
     }
+    
+    nav a {
+        font-size: 1.6em;
+    } 
 
     .content_page h1 {
         font-size: 42px;
@@ -284,6 +289,11 @@ nav .onglets button:active {
 
     .content_page h2 {
         font-size: 17px;
+    }
+
+    .content_page .icon_swifty {
+        height: 80px;
+        margin-top: 10px;
     }
 
     .content_page .btn_download {
@@ -312,7 +322,47 @@ nav .onglets button:active {
     }
 }
 
-@media all and (max-height: 1100px) and (orientation: portrait) {
+@media all and (max-height: 800px) and (max-width: 1100px) and (orientation: landscape) {
+    .content_page h1 {
+        font-size: 40px;
+    }
+
+    .content_page h2 {
+        font-size: 17px;
+    }
+
+    .content_page .icon_swifty {
+        height: 70px;
+        margin-top: 10px;
+    }
+
+    .content_page .btn_download {
+        margin-bottom: 28px;
+        font-size: 23px;
+        font-family: 'Baloo 2', cursive;
+        border-radius: 30px;
+        padding: 10px 12px;
+    }
+
+    .content_page .btn_download:hover {
+        box-shadow: 5px -5px 15px 0px rgba(235, 63, 11, 0.25), -5px 5px 15px 0px rgba(39, 200, 255, .25);
+    }
+
+    .content_page .btn_github_project {
+        padding: 10px 25px;
+        border-radius: 30px;
+    }
+
+    .content_page .btn_github_project:hover {
+        box-shadow: 5px -5px 15px 0px rgba(235, 63, 11, 0.25), -5px 5px 15px 0px rgba(39, 200, 255, .25);
+    }
+
+    .content_page .btn_github_project img {
+        height: 32px;
+    }
+}
+
+@media all and (max-height: 850px) and (orientation: portrait) {
     .content_page {
         position: unset;
         bottom: unset;
@@ -337,10 +387,5 @@ nav .onglets button:active {
 
     .content_page .btn_github_project {
         margin-bottom: 10px;
-    }
-
-    .content_page .icon_swifty {
-        height: 80px;
-        margin-top: 10px;
     }
 }

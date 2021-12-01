@@ -9,7 +9,7 @@ const h1 = document.querySelector(".content_page h1");
 const h2 = document.getElementById("h2");
 const h3 = document.getElementById("h3");
 
-const loader = document.querySelector('.bg_loader');
+const loader = document.querySelector(".bg_loader");
 const body = document.body;
 
 btn_github.onclick = function () {
@@ -26,6 +26,17 @@ btn_github_project.onclick = function () {
 
 btn_download.onclick = function () {
     location.href = "https://github.com/Swiftapp-hub/Swifty-Assistant/releases/download/v1.0.0-alpha3/SwiftyAssistant-OnLine-Installer.run"
+}
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 30) {
+        document.getElementById("nav_bar").style.background = "#050505";
+        document.getElementById("nav_bar").style.boxShadow = "0px 5px 15px 0px rgba(7, 7, 7, 0.7)";
+    }
+    else {
+        document.getElementById("nav_bar").style.background = "rgba(10, 10, 10, 0.700)";
+        document.getElementById("nav_bar").style.boxShadow = "0px 0px 0px 0px rgba(7, 7, 7, 0.534)";
+    }
 }
 
 window.onload = function(){
