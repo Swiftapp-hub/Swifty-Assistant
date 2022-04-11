@@ -8,6 +8,7 @@ const img_logo = document.getElementsByClassName("icon_swifty");
 const h1 = document.querySelector(".content_page h1");
 const h2 = document.getElementById("h2");
 const h3 = document.getElementById("h3");
+const line = document.querySelector(".line");
 
 const loader = document.querySelector(".bg_loader");
 const body = document.body;
@@ -54,7 +55,8 @@ window.onload = function(){
     .from(btn_github, {duration: 1.5, y: -200, opacity: 0, ease: "power2.out"}, 0.1)
     .from(btn_contact, {duration: 1.5, y: -200, opacity: 0, ease: "power2.out"}, 0.5)
     .from(btn_download, {duration: 2, x: -300, opacity: 0, ease: "power2.out"}, 0.6)
-    .from(btn_github_project, {duration: 2, x: 300, opacity: 0, ease: "power2.out"}, 1);
+    .from(btn_github_project, {duration: 2, x: 300, opacity: 0, ease: "power2.out"}, 1)
+    .from(line, {duration: 1.5, opacity: 0, ease: "power2.out"}, 2);
 
     anim.play();
 }
