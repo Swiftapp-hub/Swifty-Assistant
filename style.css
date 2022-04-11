@@ -132,8 +132,11 @@ nav .onglets button:active {
     width: 47%;
 }
 
-.content_page .max_parent {
-    width: 4%;
+.content_page .line {
+    border-left: 2px solid rgb(139, 139, 139);
+    height: 80%;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .content_page .btn_download {
@@ -261,6 +264,15 @@ nav .onglets button:active {
 
     .background {
         width: 200%;
+    }
+
+    .content_page .line {
+        border-top: 2px solid rgb(139, 139, 139);
+        border-left: 0px solid rgb(139, 139, 139);
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 0%;
+        width: 80%;
     }
 }
 
